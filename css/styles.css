@@ -230,12 +230,12 @@ body{
     width: 270px;
     height: 120px;
     margin-bottom:30px;
+    align-items: center;
+
 }
 
 .box-icons {
     display: flex;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 .header-name-team {
@@ -249,16 +249,17 @@ body{
 }
 
 .header-our-clients{
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--color-dark);
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    text-align: center;
+}
 
+.our-clients {
+   padding-top: 94px; 
+   padding-bottom: 94px;
 }
 
 .about-team {
@@ -386,8 +387,6 @@ body{
 .clients-item {
     display: block;
     margin-top: 50px;
-    margin-bottom:94px ;
-
 }
 
 .clients-icon {
@@ -402,9 +401,13 @@ body{
 
 .backgroud-section {
     background-color: var(--background-color-header);
-    background-image: url(../img/img-header.jpg), linear-gradient(var(--background-gradient),var(--background-gradient) );
+    background-image: linear-gradient(var(--background-gradient), var(--background-gradient)), url(../img/img-header.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .background-footer {
@@ -491,7 +494,7 @@ body{
     letter-spacing: 0.03em;
 }
 
-.container-logo-down{
+.container-logo-down {
     margin-bottom: 20px;
 }
 
@@ -499,6 +502,15 @@ body{
     display: flex;
     gap: 10px;
 }
+.socials-container {
+    margin-left: 70px;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
 .menu-button-item {
     background-color: var(--background-light-btn);
     color:var(--color-dark);
@@ -556,23 +568,23 @@ body{
     flex-basis: calc((100%-60px)/3);
 }
 
-.menu-portfolio-item:hover {
-    border: 1px solid #EEEEEE;
+.portfolio:hover {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-.portfolio-about{
+.portfolio-about {
     padding: 20px 24px;
     border-bottom: 1px solid var(--color-portfolio-border);
     border-right: 1px solid var(--color-portfolio-border);
     border-left: 1px solid var(--color-portfolio-border);
 }
 
-.background-our-team{
+.background-our-team {
     background-color: var(--background-grey);
 
 }
-.menu-team-item{
+.menu-team-item {
     background-color:var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;

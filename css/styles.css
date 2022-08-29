@@ -261,14 +261,17 @@ body{
     color: var(--primary-text-color);
 }
 
-
-
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
 }
 
-.contact-phone:hover,
+.contact-phone:hover .contact-icon,
+.contact-phone:focus .contact-icon {
+    fill: var(--accent-color);
+}
+
+.contact-phone:hover ,
 .contact-phone:focus {
     color: var(--accent-color);
 }
